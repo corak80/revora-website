@@ -229,6 +229,24 @@ body::after {
 .nav__links a.active { color: var(--teal-800); }
 .nav__links a.active::after { width: 100%; background: var(--gold-500); }
 
+.nav__lang {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.7rem;
+  border: 1.5px solid var(--charcoal-200);
+  border-radius: 100px;
+  transition: all 0.3s var(--ease-out-expo) !important;
+}
+
+.nav__lang::after { display: none !important; }
+
+.nav__lang:hover {
+  border-color: var(--teal-600) !important;
+  color: var(--teal-700) !important;
+  background: var(--teal-50);
+}
+
 .nav__hamburger {
   display: flex;
   flex-direction: column;
